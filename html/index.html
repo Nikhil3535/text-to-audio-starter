@@ -237,7 +237,7 @@
       const ext = file.name.split('.').pop();
      
      // REPLACE WITH YOUR OWN API ENDPOINT
-      const res = await fetch('REPLACE_URL/generate-upload-url', {
+      const res = await fetch('https://rmy1ge8r69.execute-api.eu-north-1.amazonaws.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ voice, email, ext, contentType: file.type })
